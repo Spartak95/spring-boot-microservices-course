@@ -4,7 +4,7 @@ vars:
   GOOS: '{{default OS .GOOS}}'
   MVNW: '{{if eq .GOOS "windows"}}mvnw.cmd{{else}}./mvnw{{end}}'
   DC_DIR: 'deployment/docker-compose'
-  INFRA_DC_FILE: '{{.DC_DIR}}/infra.yml}}'
+  INFRA_DC_FILE: '{{.DC_DIR}}/infra.yml'
 
 tasks:
   default:
@@ -21,7 +21,7 @@ tasks:
 
   start_infra:
     cmds:
-      - docker-compose -f {{.INFRA_DC_FILE}} up -d
+      - docker compose -f {{.INFRA_DC_FILE}} up -d
 
   stop_infra:
     cmds:
