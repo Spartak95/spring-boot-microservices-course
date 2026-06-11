@@ -116,7 +116,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>${dockerImageName}:${project.version}</name>
+                        <name>${dockerImageName}:latest</name>
                     </image>
                 </configuration>
             </plugin>
