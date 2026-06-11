@@ -1,5 +1,5 @@
 version: '3.8'
-name: 'spring-boot-microservices-course'
+name: 'bookstore-api'
 
 services:
   catalog-db:
