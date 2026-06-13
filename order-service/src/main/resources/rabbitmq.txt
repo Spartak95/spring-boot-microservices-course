@@ -1,0 +1,16 @@
+Exchange Type:
+1. Direct Exchange
+2. Topic Exchange
+3. Fanout Exchange
+
+Direct Exchange:
+Binding Key: Simple String
+Ex: orders, cancellations, accounts, new-orders, delivered-orders, etc.
+
+Topic Exchange:
+Binding Key: Support Patterns and Wildcards
+Ex: orders.new.*, orders.*.cancelled, orders.new.#, etc.
+
+Fanout Exchange:
+Binding Key: Ignored
+Broadcast the messages to all the queues
